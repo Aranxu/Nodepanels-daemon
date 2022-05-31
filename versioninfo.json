@@ -2,13 +2,13 @@
   "FixedFileInfo": {
     "FileVersion": {
       "Major": 1,
-      "Minor": 0,
-      "Patch": 1
+      "Minor": 1,
+      "Patch": 0
     },
     "ProductVersion": {
       "Major": 1,
-      "Minor": 0,
-      "Patch": 1
+      "Minor": 1,
+      "Patch": 0
     },
     "FileFlagsMask": "3f",
     "FileFlags ": "00",
@@ -20,14 +20,14 @@
     "Comments": "Nodepanels daemon",
     "CompanyName": "Nodepanels",
     "FileDescription": "Nodepanels daemon",
-    "FileVersion": "v1.0.1",
+    "FileVersion": "v1.1.0",
     "InternalName": "nodepanels-daemon.exe",
-    "LegalCopyright": "Copyright (c) 2021 Nodepanels",
+    "LegalCopyright": "Copyright (c) 2022 Nodepanels",
     "LegalTrademarks": "",
     "OriginalFilename": "nodepanels-daemon.exe",
     "PrivateBuild": "",
     "ProductName": "Nodepanels-daemon",
-    "ProductVersion": "v1.0.1",
+    "ProductVersion": "v1.1.0",
     "SpecialBuild": ""
   },
   "VarFileInfo": {

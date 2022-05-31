@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-//go:generate goversioninfo -icon=favicon.ico
+//go:generate goversioninfo -arm -o=resource_windows.syso -icon=favicon.ico
 
 func main() {
 
@@ -70,8 +70,8 @@ func main() {
 			fmt.Println(logo)
 			fmt.Println("====================================")
 			fmt.Println("App name    : nodepanels-daemon")
-			fmt.Println("Version     : v1.0.2")
-			fmt.Println("Update Time : 20210819")
+			fmt.Println("Version     : v1.1.0")
+			fmt.Println("Update Time : 20220525")
 			fmt.Println("\nMade by     : https://nodepanels.com")
 			fmt.Println("====================================")
 			return
@@ -117,9 +117,9 @@ func (p *Program) run() {
 			output, _ := cmd.Output()
 			if string(output) == "" {
 
-				_, err := os.Stat(Exepath() + "/nodepanels-probe.temp")
+				_, err := os.Stat(ExePath() + "/nodepanels-probe.temp")
 				if err == nil {
-					os.Rename(Exepath()+"/nodepanels-probe.temp", Exepath()+"/nodepanels-probe.exe")
+					os.Rename(ExePath()+"/nodepanels-probe.temp", ExePath()+"/nodepanels-probe.exe")
 				}
 
 				exec.Command("cmd", "/C", "net", "start", "Nodepanels-probe").Output()
@@ -134,7 +134,7 @@ func (p *Program) Stop(s service.Service) error {
 	return nil
 }
 
-func Exepath() string {
+func ExePath() string {
 	file, err := exec.LookPath(os.Args[0])
 	if err != nil {
 		return ""
